@@ -14,7 +14,7 @@ namespace EmployeeProblem
             while (flag)
             {
                 Console.WriteLine("Choose the option to perform the operation:-  1) Attendance \n 2) Salary of Employee\n 3) Employee status of working\n " +
-                    " " +
+                    "4) Switch\n " +
                     "Enter the no to operate: ");
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -31,6 +31,10 @@ namespace EmployeeProblem
                     case 3:
                         Parttime parttime = new Parttime();
                         parttime.Wage();
+                        break;
+                    case 4:
+                        Usingswitch usingswitch = new Usingswitch();
+                        usingswitch.Statement();
                         break;
 
                 }
