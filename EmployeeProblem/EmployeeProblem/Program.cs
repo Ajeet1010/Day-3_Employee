@@ -13,7 +13,8 @@ namespace EmployeeProblem
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Choose the option to perform the operation:-  1) Attendance \n 2) Salary of Employee " +
+                Console.WriteLine("Choose the option to perform the operation:-  1) Attendance \n 2) Salary of Employee\n 3) Employee status of working\n " +
+                    " " +
                     "Enter the no to operate: ");
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -26,6 +27,10 @@ namespace EmployeeProblem
                     case 2:
                         Wage wage = new Wage();
                         wage.Salary();
+                        break;
+                    case 3:
+                        Parttime parttime = new Parttime();
+                        parttime.Wage();
                         break;
 
                 }
